@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #5f6368;
+}
+
+.page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* NAV */
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+}
+
+.navbar a {
+  display: block;
+  font-size: 13px;
+  color: #000;
+  opacity: 0.75;
+}
+
+.btn-app {
+  background-image: url("//ssl.gstatic.com/gb/images/i1_1967ca6a.png");
+  background-size: 528px 68px;
+  background-position: -132px -38px;
+  border-radius: 2px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.navbar li > button {
+  border: 1px solid #4285f4;
+  font-weight: bold;
+  outline: none;
+  background: #4285f4;
+  background: -moz-linear-gradient(top, #4387fd, #4683ea);
+  background: linear-gradient(top, #4387fd, #4683ea);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4387fd,endColorstr=#4683ea,GradientType=0);
+  padding: 0px 12px;
+  line-height: 28px;
+  color: white;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  padding: 13px 20px;
+}
+
+footer li:first-child {
+  margin-left: 0;
+}
+
+footer a:hover {
+  text-decoration-line: underline;
+}
+
+/* CORE */
+
+.core {
+  width: 580px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-box {
+  position: relative;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  height: 44px;
+  width: 100%;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  padding: 5px 8px 0 16px;
+}
+
+.search-box:hover {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.form input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  margin-top: -3px;
+  color: #101010;
+}
+
+form {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.search-box-lupe {
+  margin-top: -3px;
+  margin-right: 7px;
+  height: 20px;
+  width: 20px;
+}
+
+.search-box-voice {
+  background: url("//web.archive.org/web/20191130234759im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png")
+    0 0 no-repeat;
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+  vertical-align: middle;
+  margin-top: -5px;
+  padding: 0 8px;
+}
+
+.search-box-voice:hover {
+  cursor: pointer;
+}
+
+.buttons input {
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  color: #5f6368;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0px 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.buttons input:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  color: #222;
+}
